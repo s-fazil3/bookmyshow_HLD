@@ -1,0 +1,147 @@
+/* ===== Global ===== */
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: #f5f6f8;
+  margin: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
+
+/* ===== Headings ===== */
+h1 {
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 24px 0 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ===== Buttons ===== */
+button {
+  margin: 6px 6px 6px 0;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #f84464;           /* BookMyShow red */
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #e63b5b;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* ===== Form Rows ===== */
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ===== Inputs ===== */
+input,
+select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  min-width: 160px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #f84464;
+}
+
+/* ===== Seat Grid ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+/* ===== Seat Card ===== */
+.seat {
+  padding: 10px 6px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.seat:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Seat States ===== */
+.seat.available {
+  background: #e9f7ee;
+  color: #1e7e34;
+}
+
+.seat.available:hover {
+  background: #d4f0df;
+}
+
+.seat.held {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.seat.booked {
+  background: #f8d7da;
+  color: #721c24;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* ===== Snapshot Box ===== */
+pre {
+  background: #fff;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 13px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+/* ===== Status Text ===== */
+p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+/* ===== Booking ID ===== */
+strong {
+  color: #333;
+}
